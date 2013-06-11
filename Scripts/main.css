@@ -1,0 +1,101 @@
+﻿body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.loading-panel {
+    width: 100%;
+    height: 50px;
+    background: url('images/loading9.gif') no-repeat center center;
+}
+
+.loading-page {
+    width: 100%;
+    height: 200px;
+    background: transparent url('images/loading40.gif') no-repeat center center;
+}
+
+@media (max-width: 980px) {
+    /* Enable use of floated navbar text */
+    .navbar-text.pull-right {
+        float: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.toast-top-right {
+    top: 50px;
+}
+
+.twit-wrapper {
+    width: 410px;
+    padding: 30px;
+}
+.twit-wrapper h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.twit-reader
+{
+    width: 410px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    height: 400px;
+    overflow: auto;
+    -webkit-transform: translate(0);
+    position:relative; /*IE7*/
+}
+.k-listview
+{
+    padding: 0;
+    border: 0;
+}
+.twit
+{
+    width: 370px;
+    height: 54px;
+    margin: 0;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(255,255,255,0.1);
+
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.10) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.05)), color-stop(100%,rgba(0,0,0,0.10)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.10) 100%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.10) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.10) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.10) 100%);
+}
+.twit img
+{
+    border: 3px solid transparent;
+    float: left;
+}
+.twit a:hover img
+{
+    border: 3px solid #00acec;
+}
+.twit p
+{
+    float: left;
+    margin: 0;
+    padding: 0 0 0 10px;
+    width: 300px;
+}
+.twit:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

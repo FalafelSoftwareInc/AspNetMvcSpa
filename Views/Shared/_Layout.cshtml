@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>FalafelCon</title>
+  	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS -->
+    <link href="~/Scripts/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Scripts/libs/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2013.1.514/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2013.1.514/styles/kendo.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2013.1.514/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Scripts/libs/toastr/css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Scripts/main.css" rel="stylesheet" type="text/css" />
+  
+	<!-- IE Hacks -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="container-fluid">
+	  <header class="navbar navbar-inverse navbar-fixed-top">
+	    <nav class="navbar-inner">
+	      <div class="container-fluid">
+	        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </a>
+	        <a class="brand" href="#">FalafelCon 2013</a>
+	        <div class="nav-collapse collapse">
+	          <ul class="nav">
+	            <li><a href="#/">Home</a></li>
+	            <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="#/about">Company</a></li>
+	                <li class="divider"></li>
+	                <li class="nav-header">Other</li>
+	                <li><a href="http://jquery.com" target="_blank">jQuery</a></li>
+	                <li><a href="http://requirejs.org" target="_blank">RequireJS</a></li>
+	                <li><a href="http://kendoui.com" target="_blank">Kendo UI</a></li>
+	                <li><a href="http://twitter.github.com/bootstrap" target="_blank">Bootstrap</a></li>
+	                <li><a href="http://underscorejs.org" target="_blank">Underscore</a></li>
+	                <li><a href="http://momentjs.com" target="_blank">MomentJS</a></li>
+	                <li><a href="https://github.com/CodeSeven/toastr" target="_blank">Toastr</a></li>
+	                <li><a href="http://www.malsup.com/jquery/block" target="_blank">BlockUI</a></li>
+	              </ul>
+	            </li>
+	            <li><a href="#/contact">Contact</a></li>
+	          </ul>
+	          <div class="pull-right">
+	            <a href="#" class="btn login">Log in</a>
+	            <a href="#" class="btn btn-primary signup">Sign up</a>
+	          </div>
+	        </div>
+	      </div>
+	    </nav>
+	  </header>
+
+	  <section class="container-fluid">
+	    <div class="row-fluid">
+	      <section class="sidebar span3">
+	        <nav class="well">
+	          <ul class="nav nav-list">
+	            <li class="nav-header">Conference</li>
+	            <li><a href="#/sessions">Sessions</a></li>
+	            <li><a href="#/speakers">Speakers</a></li>
+				<li><a href="#/twitter">Twitter</a></li>
+	          </ul>
+	        </nav>
+	      </section>
+	      <section id="main_container" class="span9"> 
+		  	@RenderBody()
+		  </section>
+		</div>
+	   </section>
+
+	   <hr>
+
+	   <footer>
+	     <p>&copy; Falafel Software Inc. 2013</p>
+	   </footer>
+	</div>	
+
+	<!-- JS -->
+    <script src="~/Scripts/libs/jquery/js/jquery.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/libs/require/js/require.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        define('baseurl', [], function () { return '@Url.Content("~")'; });
+    </script>
+    <script src="~/Scripts/main.js" type="text/javascript"></script>
+</body>
+</html>
